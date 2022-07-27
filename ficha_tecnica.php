@@ -107,19 +107,32 @@ $aPeliculas = array('Minios', 'minions2', 'minion3');
 
             else
                 echo "No hay stock";
-            
-           
-            
-            
-            
-            
-            
             ?>
 
 
 
 
 
+            </div>
+
+            <div class="col-12">
+
+
+
+            <?php 
+
+            if($valor%2==0){
+                echo"El número $valor es par";
+            }else{
+                echo"El número $valor es impar";
+            }
+            
+            
+            
+            
+            
+            
+            ?>
             </div>
         </div>
     </div>
