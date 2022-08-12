@@ -41,7 +41,7 @@ if (isset($_GET["pos"])) {
     $pos=$_GET["pos"];
     unset($aClientes[$pos]);
     $_SESSION["listadoClientes"]=$aClientes;
-    header("Location: listado_clientes.php");
+    header("Location: agenda2.php");
   
 }
 
@@ -131,7 +131,7 @@ if (isset($_GET["pos"])) {
                                 <td> <?php echo $cliente["edad"]  ?> </td>
                                 <td>
 
-                                    <a href="listado_clientes.php?pos=<?php echo $pos?>"> <i class="bi bi-trash"></i></a>
+                                    <a href="agenda2.php?pos=<?php echo $pos?>"> <i class="bi bi-trash"></i></a>
                                     
                                 </td>
 

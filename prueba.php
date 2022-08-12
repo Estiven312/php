@@ -3,6 +3,29 @@ ini_set('display_errors', 1);
 ini_set('display_startup_errors', 1);
 error_reporting(E_ALL);
 
+/////////////////////////////////////////////Prueba clase 18
+
+$aDatos=array("departamento "=>8,
+            "nombredepto"=>"ventas",
+            "director"=>"Juan Rodriguez",
+            "empleos"=> array(
+                array("nombre"=>"Perdro","apellido"=>"Fernandez"),
+               array("nombre"=>"Jacinto","apellido"=>"Benavente")
+            ),
+        );
+$strJson=json_encode($aDatos);
+
+print_r($strJson);
+
+$str=json_decode($strJson);
+print_r($str);
+
+/////////////////////////////////////////////
+
+
+
+
+
 $aProductos = array();
 $aProductos[] = array(
     "nombre" => "Smart TV 55\"4K UHD",
@@ -29,7 +52,7 @@ $aProductos[] = array(
 
 );
 
-print_r($aProductos)
+//print_r($aProductos)
 
 ?>
 
@@ -152,15 +175,7 @@ print_r($aProductos)
 
 
             </div>
-            <div class="col-12">
-
-
-                <?php
-                
-                for ($i=0; $i < ; $i++) { 
-                    # code...
-                }?>
-            </div>
+           
 
 
 
